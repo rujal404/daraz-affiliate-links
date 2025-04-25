@@ -113,105 +113,6 @@ body {
   cursor: pointer;
 }
 
-nav {
-  position: fixed;
-  isolation: isolate;
-  top: 0;
-  width: 100%;
-  max-width: var(--max-width);
-  margin: auto;
-  z-index: 9;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.nav__bar {
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  background-color: var(--extra-light);
-}
-
-.nav__bar a {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--text-dark);
-}
-
-.nav__menu__btn {
-  font-size: 1.5rem;
-  color: var(--text-dark);
-  cursor: pointer;
-}
-
-.nav__links {
-  list-style: none;
-  position: absolute;
-  width: 100%;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  background-color: var(--text-light);
-  transform: translateY(-100%);
-  transition: 0.5s;
-  z-index: -1;
-}
-
-.nav__links.open {
-    transform: translateY(0);
-  }
-  
-  .nav__links a {
-    font-weight: 500;
-    color: var(--white);
-    transition: 0.3s;
-  }
-  
-  .nav__links a:hover {
-    color: var(--primary-color);
-  }
-  
-  .header__container {
-    padding-top: 8rem;
-    display: grid;
-    gap: 2rem;
-    text-align: center;
-  }
-  
-  .header__content h1 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    font-weight: 500;
-    color: var(--text-dark);
-    line-height: 2.5rem;
-  }
-  
-  .header__content h1 span {
-    font-size: 6rem;
-    line-height: 6rem;
-  }
-  
-  .header__image img {
-    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.2));
-    -webkit-filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.2));
-    animation: header 5s infinite;
-  }
-  
-  @keyframes header {
-    0%,
-    100% {
-      transform: translateY(0);
-    }
-    25% {
-      transform: translateY(-20px);
-    }
-    75% {
-      transform: translateY(20px);
-    }
-  }
   
   .about {
     background-color: var(--extra-light);
@@ -390,33 +291,6 @@ nav {
     outline: none;
     border: none;
     background: transparent;
-  }
-  
-  .banner {
-    background-color: var(--extra-light);
-  }
-  
-  .banner__container {
-    display: grid;
-    gap: 2rem;
-  }
-  
-  .banner__card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  .banner__card img {
-    max-width: 70px;
-  }
-  
-  .banner__card h4 {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--text-dark);
   }
   
   .footer__container {
